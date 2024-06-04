@@ -1,0 +1,123 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><meta name="description" content="This page provides an overview and explanation of blending modes."><title>Blending Modes</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"></head><body id="concept-7055"><div class="visually-hidden-focusable overflow-hidden p-2 bg-light"><div class="container-xl"><a class="d-inline-flex m-1 btn btn-outline-primary btn-sm" href="#ariaid-title1">Skip to main content</a><a href="#bs-sidebar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Skip to docs navigation</a></div></div><div class="bs-header"><header role="banner"><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<!--
+  <div class="container">
+
+    <a class="navbar-brand" href="/">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-bootstrap"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"
+        />
+        <path
+          d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"
+        />
+      </svg>
+      DITA Bootstrap
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"/>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link One</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link Two</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link Three</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  -->
+</nav></header></div><div class="bs-container" id="content"><nav role="navigation" class="bs-sidebar-nav" id="bs-sidebar-nav"><ul><li><a href="Side_Ribbon_Tools.html">Side Ribbon Tools</a></li><li><a href="How_to_Make_a_Custom_Brush_From_an_Image.html">How to Make Custom Brushes From an Image</a></li><li><a href="How_to_Make_and_Edit_Color_Palettes.html">How to Make and Edit Color Palettes</a></li><li><a href="How_to_Use_the_Curve_Snap_Tool.html">How to Use the Curve Snap Tool</a></li><li class="active"><a href="Blending_Modes.html">Blending Modes</a></li><li><a href="Using_Clipped_Layers_and_Folders_in_Animation_Mode.html">Using Clipped Layers and Folders in Animation Mode</a></li></ul></nav><main role="main" class="container bs-main"><article role="article" aria-labelledby="ariaid-title1"><h1 class="title text-dark" id="ariaid-title1">Blending Modes</h1><div class="body conbody"><p class="shortdesc text-muted lead">This page provides an overview and explanation of blending modes.</p><p class="p">In the "Layers" window in FireAlpaca, there is drop-down menu labeled "Blending." These function in the same way as blending modes in other photo-editing programs like Photoshop and generally share the same names as well. Blending modes are applied to individual layers and determine how the colors of that layer appear and how they interact with the colors of the layers below it. Blending modes are also used for folders, where the blending mode is applied to every layer in the folder as if they were a single layer. This page will focus on the common uses for different blending modes.</p><p class="p">By default, the blending mode is set to <strong class="ph b">"Normal."</strong> In this setting, colors will appear the same as the selected color and do not affect the appearance of colors in the layers underneath.</p><section class="section"><h2 class="title h4 text-secondary">Arithmetic Modes</h2>
+            
+            <figure class="fig figure w-100 mw-100 p-3"><img class="image figure-img img-fluid border rounded" width="350" src="Images/multiply_and_add.png" alt="multiply and add modes"></figure>
+
+            <ul class="ul"><li class="li">
+                    <p class="p">After <strong class="ph b">"Normal,"</strong> the next four blending modes are basic arithmetic operations.</p>
+                </li><li class="li">
+                    <p class="p"><strong class="ph b">"Multiply"</strong> multiplies the values of the overlapping colors. This always results in a darker color, so it is often used to apply shadows to an illustration. You may also use this mode to color over scans of digital line art. To do so, set the scanned line art as the bottom layer, and apply "Multiply" blending to all color layers above the line art.</p>
+                </li><li class="li">
+                    <p class="p">Next is <strong class="ph b">"Add"</strong> (also known as "Linear Dodge" on other programs), which adds the values of each overlapping color, resulting in a brighter color. Because of that, this mode is often used to add glows and highlights in an illustration.</p>
+                </li></ul>
+            <figure class="fig figure w-100 mw-100 p-3"><img class="image figure-img img-fluid border rounded" width="350" src="Images/subtract.png" alt="subtract mode"></figure>
+
+            <figure class="fig figure w-100 mw-100 p-3"><img class="image figure-img img-fluid border rounded" width="350" src="Images/divide_blend.png" alt="divide mode"></figure>
+
+            <ul class="ul"><li class="li">
+                    <p class="p">Inversely, <strong class="ph b">"Subtract"</strong> subtracts the values of the blending colors from the underlying base colors.</p>
+                    <ul class="ul"><li class="li">
+                            <p class="p">Like in math, the order of the layers (which layer is placed higher and thus acts as the blending layer) matters in subtraction. Therefore, <strong class="ph b">"Multiply"</strong> and <strong class="ph b">"Add"</strong> yield the same color no matter which layer is used for blending, in the same way two numbers are added or multiplied together yield the same result no matter the order in an equation. Meanwhile, using <strong class="ph b">"Subtract"</strong> will yield different colors based on which layer the blending mode is applied to. This is also true for <strong class="ph b">"Divide."</strong></p>
+                        </li></ul>
+                </li><li class="li">
+                    <p class="p">The <strong class="ph b">"Divide" </strong>mode divides the values of the blend layer with those of the base layer and can be used to brighten colors and adjust warmth or coolness. If a layer is blended with a subtract layer of the same color, the result will always be white, in the same way a number divided by itself is always 1.</p>
+                </li></ul>
+        </section><section class="section"><h2 class="title h4 text-secondary">Lightening and Darkening Modes</h2>
+            
+            <figure class="fig figure w-100 mw-100 p-3"><img class="image figure-img img-fluid border rounded" src="Images/multiply_screen_overlay.png" alt="multiply, screen, and overlap modes"><img class="image figure-img img-fluid border rounded" src="Images/lighten_darken.png" alt="lighten and darken modes"></figure>
+
+            <ul class="ul"><li class="li">
+                    <p class="p">After the arithmetic modes is <strong class="ph b">"Overlay," </strong>which combines the functions of <strong class="ph b">"Multiply" </strong>and the next mode, <strong class="ph b">"Screen," </strong>which makes colors lighter. As a result, you can use <strong class="ph b">"Overlay" </strong>to increase contrast by making light areas brighter and dark areas darker.</p>
+                </li><li class="li">
+                    <p class="p">The next modes are <strong class="ph b">"Lighten" </strong>and <strong class="ph b">"Darken,"</strong> which take only the lightest or darkest values of either layer, respectively. Thus, if <strong class="ph b">"Lighten"</strong> is used on an entirely white layer, the result will be completely white because there is no color lighter than white, and <strong class="ph b">"Darken"</strong> on a completely black layer will be black because no color is darker than black.</p>
+                </li></ul>
+        </section><section class="section"><h2 class="title h4 text-secondary">Dodge and Burn Modes</h2><figure class="fig figure w-100 mw-100 p-3"><img class="image figure-img img-fluid border rounded" src="Images/dodge_and_burn.png" alt="color dodge, color burn, linear burn"></figure>
+
+            
+            <ul class="ul"><li class="li">
+                    <p class="p"><strong class="ph b">"Color Dodge" </strong>brightens the colors of the base layer by dividing the base layer by the blending layer. This mode on a white blend layer results in only white, whereas black yields no change. This mode is often used to brighten areas of an image, or to create an illumination effect, such as when illustrating lights. While <strong class="ph b">"Add"</strong>can also be used for highlights, <strong class="ph b">"Color Dodge" </strong>retains greater contrast.</p>
+                </li><li class="li">
+                    <p class="p">The two burn modes are <strong class="ph b">"Color Burn"</strong> and <strong class="ph b">"Linear Burn."</strong> <strong class="ph b">"Color Burn"</strong> results in a darker color by increasing the contrast between the blend and base layers, while <strong class="ph b">"Linear Burn"</strong> decreases brightness. Both modes can be used to create a dark, atmospheric lighting effect, but the blend layer color appears more prominently with <strong class="ph b">"Linear Burn."</strong></p>
+                </li></ul>
+        </section><section class="section"><h2 class="title h4 text-secondary">Soft and Hard Light Modes</h2>
+            <figure class="fig figure w-100 mw-100 p-3"><img class="image figure-img img-fluid border rounded" src="Images/light.png" alt="soft light and hard light"></figure>
+
+            <ul class="ul"><li class="li">
+                    <p class="p"><strong class="ph b">"Soft Light"</strong> is similar to <strong class="ph b">"Overlay"</strong> and can lighten or darken the colors of the base layer, depending on the colors of the blend layer. Black and white do not yield pure black or white; instead, white washes out colors, while black makes colors darker and more saturated. This mode is often used to apply an appearance of diffused light across an illustration.</p>
+                </li><li class="li">
+                    <p class="p">Meanwhile, <strong class="ph b">"Hard Light"</strong> creates the appearance of a harsh light, and the blend color is more apparent on the base layer. Using the mode on a completely white blend layer yields pure white, whereas the mode on an all-black layer produces black.</p>
+                </li></ul>
+        </section><section class="section"><h2 class="title h4 text-secondary">Color Modes</h2>
+            
+            <div class="p"><figure class="fig figure w-100 mw-100 p-3"><img class="image figure-img img-fluid border rounded" src="Images/huesaturationcolorluminosity.png" alt="hue, saturation, color, luminosity"></figure>
+The last four modes are <strong class="ph b">"Hue," "Saturation," "Color,"</strong> and <strong class="ph b">"Luminosity."</strong> These are based on the color dimensions hue, chroma, and luma, with each mode's name indicating the dimension taken from the blend color.</div>
+            <ul class="ul"><li class="li">
+                    <p class="p"><strong class="ph b">"Hue"</strong> takes the hue of the blend layer while retaining the luma and chroma of the base layer.</p>
+                </li><li class="li">
+                    <p class="p"><strong class="ph b">"Saturation"</strong> takes the chroma of the base layer, or the amount of saturation, and applies only that to the base layer.</p>
+                </li><li class="li">
+                    <p class="p"><strong class="ph b">"Color"</strong> takes both the hue and chroma of the top layer, and thus can be used to change the colors of a layers with multiple colors, shadows, or hues.</p>
+                    <ul class="ul"><li class="li">
+                            <p class="p">For example, if you have drawn, colored, and shaded the hair of a character and decide to change their hair color, using a color layer allows you to change the colors accordingly, without removing or having to individually recolor shadows or highlights.</p>
+                        </li></ul>
+                </li><li class="li">
+                    <p class="p">Lastly, <strong class="ph b">"Luminosity"</strong> takes the luma of the top layer while keeping the hue and chroma of the base layer.</p>
+                </li></ul>
+        </section><section class="section"><h2 class="title h4 text-secondary">Pass Through Mode</h2>
+            
+            <div class="p"><figure class="fig figure w-100 mw-100 p-3"><img class="image figure-img img-fluid border rounded" src="Images/normal_vs_passthru.png" alt="normal vs pass through"></figure>
+Folders have an additional mode known as <strong class="ph b">"Pass Through."</strong> Essentially, this determines whether to allow the blending modes of layers within the folder to influence layers outside the folder. For example, if a layer within the folder is set to "Multiply," but the folder itself is set to "Normal," that layer will not be multiplied with the underlying layers, whereas if it the folder is set to "Pass Through," the "Multiply" blending mode will be applied. The mode of a folder also determines whether it can be clipped to underlying layers. For example, if you would like the contents of a folder to only appear on the area marked by an underlying layer, if the folder is set to "Pass Through," marked spaces that lie outside the boundary of the underlying layer will still appear. To make sure the contents of a folder remain within the area of the layer it is clipped to, it must be set to "Normal."</div>
+        </section></div></article></main></div></body></html>
